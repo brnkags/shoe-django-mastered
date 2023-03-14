@@ -9,3 +9,9 @@ class Shoes(models.Model):
 
     class Meta:
         db_table = 'shoes'
+
+    def __unicode__(self):
+        return self.shoename
+
+    def __str__(self):
+        return self.shoename

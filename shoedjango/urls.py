@@ -24,5 +24,6 @@ urlpatterns = [
     path('edit/<int:id>', views.edit),
     path('update/<int:id>', views.update),
     path('delete/<int:id>', views.destroy),
-    path('', views.show),
+    path('check_out/<int:id>', views.check_out),
+    path('mpesa/<int:id>', views.mpesa),
 ]
